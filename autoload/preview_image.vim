@@ -55,7 +55,6 @@ function! preview_image#preview() abort
     call <SID>open(file_on_cursor)
 
   else
-    echo <SID>filter_and_sort()
     for funcname in <SID>filter_and_sort()
       if <SID>try(funcname)
         return
